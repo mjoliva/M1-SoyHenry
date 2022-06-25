@@ -6,22 +6,26 @@ function invertirOrden(array) {
     // DETALLE: En caso de que el elemento contenga mas de 1 digito, el mismo NO debera ser devuelto
     // No vale usar el metodo "reverse"
     
- 
+    // create new array empty
+    let newArray = [];
+    // go over first array
+    for (let i = 0; i < array.length; i++){
+    // turn the number to string and check if the length of the number is 1
+        if (array[i].toString().length === 1) {
+    // insert value to first position
+            newArray.unshift(array[i])
+        }
+
+    }
+    return newArray;
 };
 
 
 function numeroEnComun(array1, array2) {
     // Entre los dos array's que recibe la funcion por parametro
     // Buscar y retornar el valor en comun entre ellos
-   let arr = [];
-   for (let i = 0; i < array1.length; i++){
-    for (let j = 0; j < array2.length; j++){
-        if (array1[i] === array2[j])
-        return array[i];
-        arr.push(Math.min(array1[i], array2[j]))
-    }
-   }
-   return Math.min(...arr);
+
+
 };
 
 
