@@ -25,7 +25,21 @@ function numeroEnComun(array1, array2) {
     // Entre los dos array's que recibe la funcion por parametro
     // Buscar y retornar el valor en comun entre ellos
 
-
+    // create new array empty
+    let newArr = [];
+    // go over array1
+    for (let i = 0; i < array1.length; i++) {
+    // go over array2
+        for (let j = 0; j < array2.length; j++) {
+    // check if both are equal
+            if (array1[i] === array2[j])
+    // give back array1
+                return array1[i];
+    // add it to empty array
+            newArr.push(array1[i]);
+        }
+    }
+    return newArr;
 };
 
 
@@ -35,6 +49,9 @@ function sumaDeArrays(array) {
     // Tienen que devolver UN SOLO array que solo contenga elementos de tipo number
     // Sumando los elementos de cada array que contenga dos elementos, y devolviendo la suma del mismo
     // OJO: Si el elemento dentro del array que ingresa por prop, ya es de tipo number, deben devolverlo como tal dentro del array que retornan.
+
+    // create new empty array
+
 };
 
 
