@@ -28,7 +28,7 @@ function numeroEnComun(array1, array2) {
     // create new array empty
     let newArr = [];
     // define equals elements
-    let equalNumbers;
+    let equalNumbers = 0;
     // define array1 minor element
     // let array1MinorElement;
     // define array2 minor element
@@ -39,14 +39,13 @@ function numeroEnComun(array1, array2) {
     // go over array2
         for (let j = 0; j < array2.length; j++) {
     // check if any element is equal give back array1 to empty array
-            while (array1[i] === array2[j]) {
+            if (array1[i] === array2[j]) {
     // return equal and add it to equalNumbers
                 return equalNumbers = array1[i]
-            } 
-   // if it isnt equal elements
-    /*        if (equalNumbers === undefined) {
+            } /* else {
+            if  (equalNumbers === 0) {
                 return 'no hay numero comun'
-            }
+            } 
     // search the minor element in array1 
                 /*if(array1[0] > array1[i]) {
     // define array1MinorElement as the minor element
@@ -66,9 +65,9 @@ function numeroEnComun(array1, array2) {
                     newArr.push(array1MinorElement)
     // if array2 min element is minor than array1 min element return it
                 } else {
-                    newArr.push(array2MinorElement)
-                }*/
-            
+                    newArr.push(array2MinorElement) */
+                
+             
     // add it to empty array
             newArr.push(equalNumbers);   
         }
